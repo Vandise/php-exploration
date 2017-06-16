@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit bootstrap="vendor/autoload.php">
+  <testsuites>
+    <testsuite name='AmberCore'>
+        <directory suffix='.php'>./framework/test/</directory>
+    </testsuite>
+    <testsuite name='AmberEvents'>
+        <directory suffix='.php'>./event/test/</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

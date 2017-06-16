@@ -1,0 +1,28 @@
+{
+    "name": "amber/event",
+    "description": "Amber Event Routing",
+    "type": "library",
+    "scripts": {
+        "test": "phpunit"
+    },
+    "optimize-autoloader": true,
+    "autoload": {
+        "psr-4": {
+          "Amber\\Framework\\": "framework/src/",
+          "Amber\\Event\\": "event/src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2",
+        "phpdocumentor/phpdocumentor": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin J. Anderson",
+            "email": "andeb2804@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
