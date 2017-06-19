@@ -5,12 +5,8 @@ namespace Amber\System;
 class Resin
 {
 
-  public function __invoke($argv, $args)
-  {
-    $args = $argv;
-    $app = $args[1];
-    array_splice($args, 1, 1);
-    
+  public function __invoke($app, $args)
+  {    
     try
     {
       $cmd = \Amber\System\Factory\Command::create($app, $args);

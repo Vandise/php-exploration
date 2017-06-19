@@ -17,8 +17,15 @@ else
 }
 */
 
+$args = $argv;
+$app = $args[1];
+array_splice($args, 1, 1);
+
 echo "Amber Framework: Version 0.x\n";
 
-(new \Amber\System\Resin())->__invoke($argv, $args);
+if ($app)
+{
+  (new \Amber\System\Resin())->__invoke($app, $args);
+}
 
 exit(0);
