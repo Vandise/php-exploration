@@ -1,0 +1,21 @@
+#!/usr/bin/env php
+<?php
+
+define('AMBER_ROOT_PATH', __DIR__);
+
+require_once './config/constants.php';
+require_once AMBER_ROOT_PATH.'/vendor/autoload.php';
+
+if (defined('AMBER_ROOT_PATH'))
+{
+  require_once AMBER_ROOT_PATH.'/amber/framework.php';
+}
+else
+{
+  throw new Exception('Unable to load the Amber framework: Path requested - '.AMBER_ROOT_PATH);
+}
+
+echo "Amber Framework: Version 0.x\n";
+require_once AMBER_ROOT_PATH.'/amber/system/resin.php';
+
+exit(0);

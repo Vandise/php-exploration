@@ -5,11 +5,16 @@
     "scripts": {
         "test": "phpunit"
     },
+    "config": {
+        "bin-dir": "scripts"
+    },
+    "bin": ["resin"],
     "optimize-autoloader": true,
     "autoload": {
         "psr-4": {
           "Amber\\Framework\\": "framework/src/",
-          "Amber\\Event\\": "event/src/"
+          "Amber\\Event\\": "event/src/",
+          "Amber\\System\\": "system/src/"
         }
     },
     "require-dev": {
