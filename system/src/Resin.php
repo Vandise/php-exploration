@@ -5,7 +5,7 @@ namespace Amber\System;
 class Resin
 {
 
-  public function __invoke()
+  public function __invoke($argv, $args)
   {
     $args = $argv;
     $app = $args[1];

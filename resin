@@ -19,6 +19,6 @@ else
 
 echo "Amber Framework: Version 0.x\n";
 
-\Amber\System\Resin();
+(new \Amber\System\Resin())->__invoke($argv, $args);
 
 exit(0);
