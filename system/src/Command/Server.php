@@ -19,7 +19,7 @@ class Server extends Base
       ->defaultValue('public_html/');
     $this->options->add('s|script?', 'Server script handling asset and script requests.')
       ->isa('String')
-      ->defaultValue(AMBER_ROOT_PATH.'scripts/dev_server');
+      ->defaultValue(AMBER_ROOT_PATH.'/scripts/dev_server');
   }
 
   public function execute()
