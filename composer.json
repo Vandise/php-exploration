@@ -8,7 +8,7 @@
     "config": {
         "bin-dir": "scripts"
     },
-    "bin": ["resin"],
+    "bin": ["resin", "dev_server"],
     "optimize-autoloader": true,
     "autoload": {
         "psr-4": {
