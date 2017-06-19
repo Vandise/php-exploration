@@ -1,6 +1,6 @@
 {
-    "name": "amber/event",
-    "description": "Amber Event Routing",
+    "name": "vandise/amber",
+    "description": "Amber Framework",
     "type": "library",
     "scripts": {
         "test": "phpunit"
