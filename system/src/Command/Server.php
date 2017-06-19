@@ -20,6 +20,9 @@ class Server extends Base
     $this->options->add('s|script?', 'Server script handling asset and script requests.')
       ->isa('String')
       ->defaultValue(AMBER_ROOT_PATH.'/scripts/dev_server');
+    $this->options->add('e|environment?', 'Server environment (development, production, test).')
+      ->isa('String')
+      ->defaultValue('development');
   }
 
   public function execute()
@@ -33,7 +36,7 @@ class Server extends Base
       }
       else
       {
-        $command = "php -S ".$options->host.":".$options->port." -t ".$options->directory." ".$options->script;
+        $command = "AMBER_ENVIRONMENT=".$options->environment." php -S ".$options->host.":".$options->port." -t ".$options->directory." ".$options->script;
         echo "\n\n Booting up server: ".$command."\n\n";
         echo shell_exec($command);
       }
